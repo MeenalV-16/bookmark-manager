@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7fc;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.bookmark-form {
+    margin-bottom: 30px;
+}
+
+input, button {
+    padding: 10px;
+    margin: 5px;
+    font-size: 16px;
+}
+
+input {
+    width: 200px;
+    margin-right: 10px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+h2 {
+    margin-top: 20px;
+}
+
+.sort-options {
+    margin: 20px 0;
+}
+
+.sort-options select {
+    padding: 10px;
+    font-size: 16px;
+    margin-right: 20px;
+}
+
+#bookmark-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.bookmark-item {
+    background-color: white;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 8px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.bookmark-item a {
+    color: #333;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.bookmark-item p {
+    margin: 10px 0;
+}
+
+.bookmark-item .tags {
+    font-size: 14px;
+    color: #555;
+    margin-top: 10px;
+}

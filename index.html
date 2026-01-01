@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personalized Bookmark Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Bookmark Manager</h1>
+
+        <!-- Add Bookmark Form -->
+        <div class="bookmark-form">
+            <input type="text" id="url" placeholder="Website URL" required>
+            <input type="text" id="title" placeholder="Bookmark Title" required>
+            <input type="text" id="category" placeholder="Category" required>
+            <input type="text" id="tags" placeholder="Tags (comma separated)">
+            <button id="add-bookmark">Add Bookmark</button>
+        </div>
+
+        <h2>Bookmarked Websites</h2>
+        
+        <!-- Sort options -->
+        <div class="sort-options">
+            <label for="sort-category">Sort by Category: </label>
+            <select id="sort-category">
+                <option value="">All</option>
+                <option value="Work">Work</option>
+                <option value="Personal">Personal</option>
+                <option value="Entertainment">Entertainment</option>
+            </select>
+
+            <label for="sort-tags">Sort by Tag: </label>
+            <select id="sort-tags">
+                <option value="">All</option>
+                <option value="Important">Important</option>
+                <option value="Later">Later</option>
+                <option value="Favorites">Favorites</option>
+            </select>
+        </div>
+
+        <div id="bookmark-list">
+            <!-- Bookmarks will be displayed here -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
